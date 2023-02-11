@@ -44,9 +44,10 @@
   <summary>Sumário</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o Projeto</a>
+      <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Tecnologias Utilizadas</a></li>
+        <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
+        <li><a href="#processo-de-criação">Processo de Criação</a></li>
       </ul>
     </li>
     <!-- <li>
@@ -57,19 +58,16 @@
       </ul>
     </li> -->
     <!-- <li><a href="#usage">Usage</a></li> -->
-    <li><a href="#roadmap">Processo de Criação</a></li>
     <!-- <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li> -->
-    <li><a href="#contact">Contato</a></li>
+    <li><a href="#contato">Contato</a></li>
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 </br>
 <!-- Sobre o Projeto -->
 
-## Sobre o Projeto
-
-<a href="#about-the-project"></a>
+# Sobre o Projeto
 
 </br>
 
@@ -88,8 +86,6 @@ Esse projeto foi pensado com intuito de:
 </br>
 
 ## Tecnologias Utilizadas
-
-<a href="#build-with"></a>
 
 <!-- - [![Next][next.js]][next-url]
 - [![React][react.js]][react-url]
@@ -151,12 +147,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- ROADMAP -->
-
 </br>
 
 ## Processo de Criação
-
-<a href="#roadmap"></a>
 
 - [ ] Estruturar o HTML
 - [ ] Estruturar o CSS
@@ -196,9 +189,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 </br>
 
-## Contato
-
-<a href="#contact"></a>
+# Contato
 
 Lucas Cunegundes - [LinkdIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
 
