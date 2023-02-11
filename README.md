@@ -69,6 +69,8 @@
 
 ## Sobre o Projeto
 
+<a href="#about-the-project"></a>
+
 </br>
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
@@ -81,9 +83,13 @@ Esse projeto foi pensado com intuito de:
 - Servir de base para análises
 - Documentar o fluxo das diferentes redes/plataformas
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p>
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
-### Tecnologias Utilizadas
+</br>
+
+## Tecnologias Utilizadas
+
+<a href="#build-with"></a>
 
 <!-- - [![Next][next.js]][next-url]
 - [![React][react.js]][react-url]
@@ -98,7 +104,7 @@ Esse projeto foi pensado com intuito de:
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 - <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p>
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- GETTING STARTED -->
 
@@ -132,7 +138,7 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = "ENTER YOUR API";
    ```
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p>
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- USAGE EXAMPLES -->
 
@@ -142,11 +148,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p> -->
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- ROADMAP -->
 
+</br>
+
 ## Processo de Criação
+
+<a href="#roadmap"></a>
 
 - [ ] Estruturar o HTML
 - [ ] Estruturar o CSS
@@ -155,7 +165,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- See the [open issues](https://github.com/Cunegundess/SocialMediaDashboard/issues) for a full list of proposed features (and known issues). -->
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p>
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -180,11 +190,15 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p> -->
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- CONTACT -->
 
+</br>
+
 ## Contato
+
+<a href="#contact"></a>
 
 Lucas Cunegundes - [LinkdIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
 
@@ -200,7 +214,7 @@ Link Projeto: [https://github.com/Cunegundess/SocialMediaDashboard](https://gith
 - []()
 - []()
 
-<p align="right">[<a href="#readme-top">back to top</a>]</p> -->
+<!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
