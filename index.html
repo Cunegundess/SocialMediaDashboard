@@ -3,87 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <title>Frontend Mentor | [Social Media Dashboard]</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
-
   <body>
-    <section class="header">
-      <div class="pageTitle">
-        <h1>Social Media Dashboard</h1>
-      </div>
-      <div class="totalFollowers">
-        <p>Total Followers: 23,004</p>
-      </div>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    </section>
+    <div class="container">
+      <header>
+        <div class="title-box">
+          <h1 class="title">Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
 
-    <section class="firstOverview">
-      <div class="facebook">
-        <a href="" target="_blank">
-          <img class="faceIcon" src="images/icon-facebook.svg"></img>
-          @nathanf</a
-        >
-        <p class="followers">1987 Followers</p>
-        <p class="percentage">12 Today</p>
-      </div>
-      <div class="twitter">
-        <a href="" target="_blank">
-          <img class="twitterIcon" src="images/icon-twitter.svg"></img>
-          @nathanf</a
-        >
-        <p class="followers">1044 Followers</p>
-        <p class="percentage">99 Today</p>
-      </div>
-      <div class="instagram">
-        <a href="" target="_blank">
-          <img class="instaIcon" src="images/icon-instagram.svg"></img>
-          @nathanf</a
-        >
-        <p class="followers">11k Followers</p>
-        <p class="percentage">1099 Today</p>
-      </div>
-      <div class="youtube">
-        <a href="" target="_blank">
-          <img class="youtubeIcon" src="images/icon-youtube.svg"></img>
-          Nathan F.</a
-        >
-        <p class="subscribers">8239 Subscribers</p>
-        <p class="percentage">144 Today</p>
-      </div>
-    </section>
+        <div class="toggle-mode">
+          <span>Dark Mode</span>
+          <input type="checkbox" class="btnToggle" />
+        </div>
+      </header>
 
-    <section class="secondOverview">
-      <h1>Overview - Today</h1>
-      <div class="faceViews">Page Views 87 3%</div>
-      <div class="faceLikes">Likes 52 2%</div>
-      <div class="instaLikes">Likes 5462 2257%</div>
-      <div class="instaViews">Profile Views 52k 1375%</div>
-      <div class="retweets">Retweets 117 303%</div>
-      <div class="twitterLikes">Likes 507 553%</div>
-      <div class="youtubeLikes">Likes 107 19%</div>
-      <div class="youtubeViews">Total Views 1407 12%</div>
-    </section>
+      <main>
+        <section class="followers">
+          <article class="card facebook">
+            <span class="username">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+              @elianbecali
+            </span>
+            <p class="count-follow">
+              <span>1987</span>
+              Followers
+            </p>
+            <span>
+              <img src="./images/icon-up.svg" alt="Up Followers" />
+              12 Today
+            </span>
+          </article>
+          <article class="card twitter">
+            <span class="username">
+              <img src="./images/icon-twitter.svg" alt="facebook" />
+              @elianbecali
+            </span>
+            <p class="count-follow">
+              <span>1044</span>
+              Followers
+            </p>
+            <span>
+              <img src="./images/icon-up.svg" alt="Up Followers" />
+              99 Today
+            </span>
+          </article>
+          <article class="card instagram">
+            <span class="username">
+              <img src="./images/icon-instagram.svg" alt="facebook" />
+              @elianbecali
+            </span>
+            <p class="count-follow">
+              <span>11K</span>
+              Followers
+            </p>
+            <span>
+              <img src="./images/icon-up.svg" alt="Up Followers" />
+              1099 Today
+            </span>
+          </article>
+          <article class="card youtube">
+            <span class="username">
+              <img src="./images/icon-youtube.svg" alt="facebook" />
+              Elian Becali
+            </span>
+            <p class="count-follow">
+              <span>8239</span>
+              Subscribers
+            </p>
+            <span class="down">
+              <img src="./images/icon-down.svg" alt="Up Followers" />
+              144 Today
+            </span>
+          </article>
+        </section>
+        <section class="overview">
+          <h2>Overview - Today</h2>
+          <div class="grid-overview">
+            <article class="card">
+              <div class="title-card">
+                <span>Page Views</span>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </div>
+              <div class="text-card">
+                <p>87</p>
+                <span>
+                  <img src="./images/icon-up.svg" alt="Up page view" />
+                  3%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Likes</span>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </div>
+              <div class="text-card">
+                <p>52</p>
+                <span class="down">
+                  <img src="./images/icon-down.svg" alt="Up like facebook" />
+                  2%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Likes</span>
+                <img src="./images/icon-instagram.svg" alt="instagram" />
+              </div>
+              <div class="text-card">
+                <p>5462</p>
+                <span>
+                  <img src="./images/icon-up.svg" alt="Up like instagram" />
+                  2257%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Profile Views</span>
+                <img src="./images/icon-instagram.svg" alt="instagram" />
+              </div>
+              <div class="text-card">
+                <p>52K</p>
+                <span>
+                  <img src="./images/icon-up.svg" alt="Up page view" />
+                  1375%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Retweets</span>
+                <img src="./images/icon-twitter.svg" alt="twitter" />
+              </div>
+              <div class="text-card">
+                <p>117</p>
+                <span>
+                  <img src="./images/icon-up.svg" alt="Up Retweet twitter" />
+                  303%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Likes</span>
+                <img src="./images/icon-twitter.svg" alt="twitter" />
+              </div>
+              <div class="text-card">
+                <p>507</p>
+                <span>
+                  <img src="./images/icon-up.svg" alt="Up like twitter" />
+                  553%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Likes</span>
+                <img src="./images/icon-youtube.svg" alt="youtube" />
+              </div>
+              <div class="text-card">
+                <p>107</p>
+                <span class="down">
+                  <img src="./images/icon-down.svg" alt="Down like" />
+                  19%
+                </span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="title-card">
+                <span>Total Views</span>
+                <img src="./images/icon-youtube.svg" alt="youtube" />
+              </div>
+              <div class="text-card">
+                <p>1407</p>
+                <span class="down">
+                  <img src="./images/icon-down.svg" alt="Down view" />
+                  12%
+                </span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by
+      <a href="https://github.com/Cunegundess/" target="blank"
+        >Lucas Cunegundes</a
+      >.
+    </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,184 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em 0;
+}
+header .title-box .title {
+  color: var(--ColorDark);
+  transition: 0.3s;
+}
+header .title-box p {
+  color: var(--ColorDarkLight);
+  font-weight: 700;
+}
+header .toggle-mode {
+  display: flex;
+  align-items: center;
+  color: var(--ColorDarkLight);
+  font-weight: 700;
+  font-size: 16px;
+}
+header .toggle-mode input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 90px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 20px;
+  background: var(--ToggleBtnDark);
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+}
+header .toggle-mode input[type="checkbox"]::before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  transform: translateX(50px) scale(0.8);
+  background: var(--BgLight);
+  transition: transform 0.3s, background 0.3s;
+  position: absolute;
+}
+header .toggle-mode input[type="checkbox"]:checked::before {
+  transform: translateX(0) scale(0.8);
+}
+main .followers,
+main .grid-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+main .followers .card,
+main .grid-overview .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--BgLightCard);
+  transition: background 0.2s;
+  position: relative;
+}
+main .followers .card:hover,
+main .grid-overview .card:hover {
+  background: var(--BgLightCardHover);
+}
+main .followers .card::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-radius: 8px 8px 0 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+main .followers .card.facebook::before {
+  background: var(--Facebook);
+}
+main .followers .card.twitter::before {
+  background: var(--Twitter);
+}
+main .followers .card.instagram::before {
+  background: var(--Instagram);
+}
+main .followers .card.youtube::before {
+  background: var(--YouTube);
+}
+main .followers .card .username {
+  display: flex;
+  justify-content: center;
+  color: var(--ColorDarkLight);
+}
+main .followers .card .username img {
+  margin-right: 10px;
+}
+.card .count-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ColorDarkLight);
+}
+.card .count-follow span {
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--ColorDark);
+  transition: 0.3s;
+}
+.card span {
+  display: flex;
+  align-items: center;
+  color: var(--LimeGreen);
+  font-weight: 700;
+}
+.card span.down {
+  color: var(--BrightRed);
+}
+.card span img {
+  margin-right: 5px;
+}
+main .overview {
+  margin-top: 50px;
+}
+main .overview h2 {
+  color: var(--ColorDark);
+  font-size: 1.7em;
+}
+main .grid-overview {
+  margin: 20px 0;
+}
+main .grid-overview .card {
+  padding: 30px;
+}
+main .grid-overview .card .title-card {
+  margin-bottom: 20px;
+}
+main .grid-overview .card .title-card span {
+  font-size: 1.1em;
+  color: var(--ColorDarkLight);
+}
+main .grid-overview .card .title-card,
+main .grid-overview .card .text-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .grid-overview .card .text-card {
+  align-items: baseline;
+}
+main .grid-overview .card .text-card p {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: var(--ColorDark);
+}
+main .grid-overview .card .text-card span {
+  display: flex;
+  align-items: center;
+  color: var(--LimeGreen);
+  font-weight: 700;
+}
+main .grid-overview .card .text-card span.down {
+  color: var(--BrightRed);
+}
+
+footer.attribution {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--ColorDarkLight);
+  transition: 0.3s;
+  margin: 10px 0;
+}
+footer.attribution a {
+  color: var(--ColorDark);
+  text-decoration: none;
+  transition: 0.3s;
+}
