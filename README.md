@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Cunegundess/SocialMediaDashboard">
-    <img src="images/logoEtep.png" alt="Logo" width="200" height="80">
+    <img src="./images/logoEtep.png" alt="Logo" width="200" height="80">
   </a>
 
 <h3 align="center">Social Media Dashboard</h3>
@@ -47,7 +47,6 @@
       <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
         <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
-        <li><a href="#processo-de-criação">Processo de Criação</a></li>
       </ul>
     </li>
     <!-- <li>
@@ -73,7 +72,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-![Preview](design/desktop-preview.jpg)
+![Preview](images/desktop-preview.jpg)
 
 Esse projeto foi pensado com intuito de:
 
@@ -88,7 +87,6 @@ Esse projeto foi pensado com intuito de:
 ## Tecnologias Utilizadas
 
 <!-- - [![Next][next.js]][next-url]
-- [![React][react.js]][react-url]
 - [![Vue][vue.js]][vue-url]
 - [![Angular][angular.io]][angular-url]
 - [![Svelte][svelte.dev]][svelte-url]
@@ -99,6 +97,7 @@ Esse projeto foi pensado com intuito de:
 - <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 - <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+- [![React][react.js]][react-url]
 
 <!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
 
@@ -148,14 +147,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 </br>
-
-## Processo de Criação
-
-- [ ] Estruturar o HTML
-- [ ] Estruturar o CSS
-- [ ] Criar as funcionalidades com Javascript
-  - [ ] API's, etc.
-
 <!-- See the [open issues](https://github.com/Cunegundess/SocialMediaDashboard/issues) for a full list of proposed features (and known issues). -->
 
 <!-- <p align="right">[<a href="#readme-top">back to top</a>]</p> -->
