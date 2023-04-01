@@ -1,11 +1,12 @@
 import { FollowersCard } from "../../components/FollowersCard";
 import { Header } from "../../components/Header";
 import { OverviewCard } from "../../components/OverviewCard";
-import { useState } from "react";
+// import { useState } from "react";
 import "./styles.scss";
+import socialData from "../../data/socialData.json";
 
 export type dataProps = {
-  id: string;
+  id: number;
   account: {
     name: string;
     titlePage: string;
@@ -25,8 +26,8 @@ export type dataProps = {
 export function Dashboard() {
   // const data: ItemProps[] = db;
   // const dataOverview: OverviewProps[] = db_overview;
-  // const data: dataProps[] = serverData;
-  const [data] = useState<dataProps[]>([]);
+  const data: dataProps[] = socialData;
+  // const [data] = useState<dataProps[]>([]);
 
   return (
     <div id="dashboard-container">

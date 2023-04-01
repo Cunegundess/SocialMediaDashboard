@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "account": {
+      "name": "@Usuario",
+      "titlePage": "Page Views",
+      "titleLikes": "Likes",
+      "totalPage": "87",
+      "totalLikes": "100",
+      "percentPage": "3",
+      "percentLikes": "5",
+      "followers": "9451",
+      "likes": "7420",
+      "followersOverview": "1547",
+      "type": "facebook",
+      "status": true
+    }
+  },
+  {
+    "id": 2,
+    "account": {
+      "name": "@Usuario",
+      "titlePage": "Retweets",
+      "titleLikes": "Likes",
+      "totalPage": "200",
+      "totalLikes": "500",
+      "percentPage": "10",
+      "percentLikes": "30",
+      "followers": "6572",
+      "likes": "3667",
+      "followersOverview": "3692",
+      "type": "twitter",
+      "status": true
+    }
+  },
+  {
+    "id": 3,
+    "account": {
+      "name": "@Usuario",
+      "titlePage": "Profile Views",
+      "titleLikes": "Likes",
+      "totalPage": "1000",
+      "totalLikes": "300",
+      "percentPage": "10",
+      "percentLikes": "5",
+      "followers": "2041",
+      "likes": "3765",
+      "followersOverview": "1370",
+      "type": "instagram",
+      "status": false
+    }
+  },
+  {
+    "id": 4,
+    "account": {
+      "name": "@Usuario",
+      "titlePage": "Total Views",
+      "titleLikes": "Likes",
+      "totalPage": "10000",
+      "totalLikes": "2000",
+      "percentPage": "30",
+      "percentLikes": "40",
+      "followers": "38311",
+      "likes": "8088",
+      "followersOverview": "20540",
+      "type": "youtube",
+      "status": true
+    }
+  }
+]
