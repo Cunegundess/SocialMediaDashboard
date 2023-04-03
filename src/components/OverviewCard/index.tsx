@@ -1,37 +1,18 @@
-import "./styles.scss";
-
 import { ReactComponent as DownSvg } from "../../assets/icon-down.svg";
 import { ReactComponent as UpSvg } from "../../assets/icon-up.svg";
-
 import { ReactComponent as FacebookSvg } from "../../assets/icon-facebook.svg";
 import { ReactComponent as InstagramSvg } from "../../assets/icon-instagram.svg";
 import { ReactComponent as TwitterSvg } from "../../assets/icon-twitter.svg";
 import { ReactComponent as YoutubeSvg } from "../../assets/icon-youtube.svg";
-import { dataProps } from "../../pages/Dashboard";
+import { fakeOverviewData } from "../../api/api";
+
+import "./styles.scss";
 
 type Props = {
-  data: dataProps;
+  data: fakeOverviewData;
 };
 
-function getValueByType(data: any, likesProp: string, pageProp: string) {
-  const type = data.account.type;
-  if (
-    type === "instagram" ||
-    type === "facebook" ||
-    type === "twitter" ||
-    type === "youtube"
-  ) {
-    return data.account[likesProp];
-  } else {
-    return data.account[pageProp];
-  }
-}
-
 export function OverviewCard({ data }: Props) {
-  const title = getValueByType(data, "titleLikes", "titlePage");
-  const total = getValueByType(data, "totalLikes", "totalPage");
-  const percent = getValueByType(data, "percentLikes", "percentPage");
-
   function iconSvg(type: string) {
     switch (type) {
       case "instagram":
@@ -48,17 +29,17 @@ export function OverviewCard({ data }: Props) {
   return (
     <div id="overview-card-container">
       <div id="left-content" className="align-content">
-        <span>{title}</span>
-        <strong>{total}</strong>
+        <span>{data.title}</span>
+        <strong>{data.total}</strong>
       </div>
       <div id="right-content" className="align-content">
-        {iconSvg(data.account.type)}
+        {iconSvg(data.type)}
         <div
           id="percent-overview"
-          className={data.account.status ? "green-status" : "red-status"}
+          className={data.status ? "green-status" : "red-status"}
         >
-          {data.account.status ? <UpSvg /> : <DownSvg />}
-          <span id="margin-left">{percent}</span>
+          {data.status ? <UpSvg /> : <DownSvg />}
+          <span id="margin-left">{data.percent}</span>
           <span>%</span>
         </div>
       </div>

@@ -1,8 +1,6 @@
-import { dataProps } from "../../pages/Dashboard";
-
+import { dataFake } from "../../api/api";
 import { ReactComponent as DownSvg } from "../../assets/icon-down.svg";
 import { ReactComponent as UpSvg } from "../../assets/icon-up.svg";
-
 import { ReactComponent as FacebookSvg } from "../../assets/icon-facebook.svg";
 import { ReactComponent as InstagramSvg } from "../../assets/icon-instagram.svg";
 import { ReactComponent as TwitterSvg } from "../../assets/icon-twitter.svg";
@@ -12,7 +10,7 @@ import "./styles.scss";
 
 type Props = {
   borderTheme?: string;
-  data: dataProps;
+  data: dataFake;
 };
 
 function iconSvg(type: string) {
@@ -34,26 +32,24 @@ export function FollowersCard({ borderTheme, data }: Props) {
       <hr className={borderTheme} />
       <div id="followers-card-content" className="center">
         <div id="header-card-followers" className="center">
-          {iconSvg(data.account.type)}
-          <span>{data.account.name}</span>
+          {iconSvg(data.type)}
+          <span>{data.nickname}</span>
         </div>
 
         <div id="center-card-followers" className="center">
           <strong>
-            {data.account.followers}
-            {data.account.type === "instagram" && "K"}
+            {data.followers}
+            {data.type === "instagram" && "K"}
           </strong>
-          <span>
-            {data.account.type === "youtube" ? "subscribers" : "followers"}
-          </span>
+          <span>{data.type === "youtube" ? "subscribers" : "followers"}</span>
         </div>
 
         <div
           id="footer-card-followers"
-          className={data.account.status ? "green-status" : "red-status"}
+          className={data.status ? "green-status" : "red-status"}
         >
-          {data.account.status ? <UpSvg /> : <DownSvg />}
-          <span>{data.account.followersOverview}</span>
+          {data.status ? <UpSvg /> : <DownSvg />}
+          <span>{data.followersOverview}</span>
           <span>Today</span>
         </div>
       </div>

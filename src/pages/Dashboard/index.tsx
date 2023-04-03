@@ -1,33 +1,26 @@
 import { FollowersCard } from "../../components/FollowersCard";
 import { Header } from "../../components/Header";
 import { OverviewCard } from "../../components/OverviewCard";
-// import { useState } from "react";
-import "./styles.scss";
-import socialData from "../../data/socialData.json";
+import { useEffect, useState } from "react";
+import { getDataFake, getFakeOverviewData } from "../../api/api";
+import { dataFake, fakeOverviewData } from "../../api/api";
 
-export type dataProps = {
-  id: number;
-  account: {
-    name: string;
-    titlePage: string;
-    titleLikes: string;
-    totalPage: string;
-    totalLikes: string;
-    percentPage: string;
-    percentLikes: string;
-    followers: string;
-    likes: string;
-    followersOverview: string;
-    type: string;
-    status: boolean;
-  };
-};
+import "./styles.scss";
 
 export function Dashboard() {
-  // const data: ItemProps[] = db;
-  // const dataOverview: OverviewProps[] = db_overview;
-  const data: dataProps[] = socialData;
-  // const [data] = useState<dataProps[]>([]);
+  const [data, setData] = useState<dataFake[]>([]);
+  const [dataOverview, setDataOverview] = useState<fakeOverviewData[]>([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const fetchedData = await getDataFake();
+      const fetchedDataOverview = await getFakeOverviewData();
+      setData(fetchedData);
+      setDataOverview(fetchedDataOverview);
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <div id="dashboard-container">
@@ -35,18 +28,14 @@ export function Dashboard() {
 
       <div id="followers-container">
         {data.map((item) => (
-          <FollowersCard
-            data={item}
-            borderTheme={item.account.type}
-            key={item.id}
-          />
+          <FollowersCard data={item} borderTheme={item.type} key={item.id} />
         ))}
       </div>
 
       <h2 id="overview">Overview - Today</h2>
 
       <div id="overview-container">
-        {data.map((item) => (
+        {dataOverview.map((item) => (
           <OverviewCard data={item} key={item.id} />
         ))}
       </div>
