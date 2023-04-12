@@ -20,11 +20,18 @@ export function Dashboard() {
     }
 
     fetchData();
+
+    const interval = setInterval(() => {
+      fetchData();
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div id="dashboard-container">
-      <Header />
+      <Header data={data[0]}/>
+      
 
       <div id="followers-container">
         {data.map((item) => (
