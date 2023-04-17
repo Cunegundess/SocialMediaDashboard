@@ -30,7 +30,7 @@
         <li><a href="#Technologies">Technologies</a></li>
       </ul>
     </li>
-    <li><a href="#Contactt">Contact</a></li>
+    <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
 </br>
