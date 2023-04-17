@@ -23,7 +23,7 @@
         <ul>
           <li>
             <a href="#getting-started">Getting Started</a>
-          <li><a haref="#Installation">Installation</a></li>
+          <li><a href="#Installation">Installation</a></li>
           <li><a href="#Usage">Usage</a></li>
           <li><a href="#Features">Features</a></li>
     </li>
@@ -64,23 +64,27 @@ This project was designed with the aim of:
 
 To install and run this project, follow these steps:
 
-1.  Clone the repository:
+1.  Install Yarn:
+   
+    `npm install -g yarn`
+   
+2.  Clone the repository:
 
     `git clone https://github.com/Cunegundess/SocialMediaDashboard.git`
 
-2.  Go to the project directory:
+3.  Go to the project directory:
 
     `cd SocialMediaDashboard`
 
-3.  Install the dependencies:
+4.  Install the dependencies:
 
-    `npm install`
+    `yarn`
 
-4.  Run the development server:
+5.  Run the development server:
 
-    `npm start`
+    `yarn start`
 
-5.  Open [http://localhost:3000](http://localhost:3000/) in your browser to see the dashboard.
+6.  Open [http://localhost:3000](http://localhost:3000/) in your browser to see the dashboard.
 
 </br>
 
