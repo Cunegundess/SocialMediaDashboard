@@ -30,7 +30,7 @@
         <li><a href="#Technologies">Technologies</a></li>
       </ul>
     </li>
-    <li><a href="#Contactt">Contact</a></li>
+    <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
 </br>
@@ -121,4 +121,4 @@ The dashboard displays some information about followers and statistics about the
 <a id="Contact"></a>
 # Contact
 
-Lucas Cunegundes - [LinkdIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
+Lucas Cunegundes - [LinkedIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
