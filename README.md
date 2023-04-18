@@ -128,3 +128,7 @@ João Pedro - [LinkedIn](https://www.linkedin.com/in/joaoploliveira) - pedrojoao
 Marcos Estevam - [LinkedIn](https://www.linkedin.com/in/marcos-estevam-242316242) - marquinholetonia@gmail.com
 
 Karina de Oliveira - [LinkedIn](https://www.linkedin.com/in/karinadeoliveira) - karideoliveira94@gmail.com
+
+Felipe Leite Portela - [LinkedIn](https://www.linkedin.com/in/felipe-leite-portela-8a2146250) - felipeleite20@hotmail.com
+
+Alexandre Armando Vieira - [LinkedIn](https://www.linkedin.com/in/alexandre-armando-vieira-373035251) - alexandrearmandovieira@gmail.com
