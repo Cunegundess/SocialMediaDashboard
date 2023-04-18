@@ -124,3 +124,7 @@ The dashboard displays some information about followers and statistics about the
 Lucas Cunegundes - [LinkedIn](https://www.linkedin.com/in/lucas-cunegundes) - lucascsantana6@gmail.com
 
 João Pedro - [LinkedIn](https://www.linkedin.com/in/joaoploliveira) - pedrojoaoliveira@gmail.com
+
+Marcos Estevam - [LinkedIn](https://www.linkedin.com/in/marcos-estevam-242316242) - marquinholetonia@gmail.com
+
+Karina de Oliveira - [LinkedIn](https://www.linkedin.com/in/karinadeoliveira) - karideoliveira94@gmail.com
