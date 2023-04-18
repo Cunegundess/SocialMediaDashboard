@@ -36,8 +36,8 @@ function iconSvg(type: string) {
 // randomly generated numbers for the followers count, followers overview,
 // and status (whether the count has gone up or down)
 function calculateNumbers(numbers: dataFake) {
-  const followers = Math.floor(Math.random() * 100000);
-  const followersOverview = Math.floor(Math.random() * 1000)
+  const followers = Math.floor(Math.random() * 100000) + 1000;
+  const followersOverview = Math.floor(Math.random() * 1000) + 1000;
   const status = Math.random() < 0.5;
 
   return {

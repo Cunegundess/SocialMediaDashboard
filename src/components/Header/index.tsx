@@ -12,7 +12,7 @@ type Props = {
 
 // Define function to calculate followers number
 function calculateNumbers(numbers: dataFake) {
-  const followers = Math.floor(Math.random() * 1000000);
+  const followers = Math.floor(Math.random() * 1000000) + 100000;
   return {
     followers
   };

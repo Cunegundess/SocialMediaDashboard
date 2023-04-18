@@ -17,7 +17,6 @@ export function Dashboard() {
       setData(fetchedData);
       setDataOverview(fetchedDataOverview);
     }
-
     fetchData();
 
     // Set up an interval to refetch data every 5 seconds
