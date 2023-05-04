@@ -61,6 +61,7 @@ This project was designed with the aim of:
 <a id="Installation"></a>
 ## Installation
 - - -
+You have two options: you can either install it, or visit the website by clicking [here](https://socialdashboardmedia.netlify.app/) :)
 
 To install and run this project, follow these steps:
 
