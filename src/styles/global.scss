@@ -50,17 +50,17 @@ strong {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 * {
-  scrollbar-width: thin;
-  scrollbar-color: black yellow;
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0;
 }
 
 *::-webkit-scrollbar-track {
@@ -68,7 +68,5 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(192, 192, 192);
-  border-radius: 20px;
-  border: 3px solid transparent;
+  background-color: transparent;
 }
